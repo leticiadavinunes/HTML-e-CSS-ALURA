@@ -5,6 +5,7 @@
   --botao-azul: #167bf7;
   --cor-de-fundo: #00030c;
   --fonte-principal: "Inter";
+  --botao-azul-efeito: hsl(213, 100%, 83%);
 }
 
 body {
@@ -154,4 +155,19 @@ body {
 
 .rodape {
   padding: 5em;
+}
+
+/*PSEUDO CLASSE CSS*/
+
+.lista__link a:hover {
+  color: var(--botao-azul);
+}
+
+.lista__link a:active {
+  color: pink;
+}
+
+.container__button:hover {
+  background-color: var(--botao-azul-efeito);
+  color: var(--cor-de-fundo);
 }
